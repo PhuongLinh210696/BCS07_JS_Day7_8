@@ -77,6 +77,8 @@ function soNguyenTo() {
         if (isPrime(element)==true) {
             document.getElementById("ketquaSoNguyenTo").innerHTML = element;
             break
+        }else{
+            document.getElementById("ketquaSoNguyenTo").innerHTML = -1;
         }
     }
 }
