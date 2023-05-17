@@ -54,9 +54,11 @@ function doiCho() {
     arr[viTri1] = arr.splice(viTri2,1,arr[viTri1])[0]
     document.getElementById("ketquaDoiCho").innerHTML = arr;
 }
-
+function compareNumbers(a, b) {
+    return a - b;
+  }
 function sapXepTangDan() {
-    var sort = arr.sort();
+    var sort = arr.sort(compareNumbers);
     document.getElementById("ketquaSapXep").innerHTML = sort;
 }
 
